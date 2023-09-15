@@ -1,0 +1,576 @@
+../scripts/suppliers_scripts/prices
+	suppliers_get_prices.py
+		Получение информации о ценах.
+		https://openapi.wildberries.ru/#tag/Ceny/paths/~1public~1api~1v1~1info/get
+
+	suppliers_post_prices.py
+		Загрузка цен
+		https://openapi.wildberries.ru/#tag/Ceny/paths/~1public~1api~1v1~1prices/post
+
+../scripts/suppliers_scripts/content/trash
+	suppliers_post_nm_trashed_list.py
+		Список НМ, находящихся в корзине
+		https://openapi.wildberries.ru/#tag/Kontent-Korzina/paths/~1content~1v1~1cards~1trash~1list/post
+
+../scripts/suppliers_scripts/content/cards
+	suppliers_post_p_card_get_card_by_seller_art.py
+		Получение КТ по артикулам продавца
+		https://openapi.wildberries.ru/#tag/Kontent-Prosmotr/paths/~1content~1v1~1cards~1filter/post
+
+	suppliers_get_p_card_nm_errs.py
+		Список несозданных НМ с ошибками
+		https://openapi.wildberries.ru/#tag/Kontent-Prosmotr/paths/~1content~1v1~1cards~1error~1list/get
+
+	suppliers_post_p_card_add_nm_to_card.py
+		Добавление НМ к КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Zagruzka/paths/~1content~1v1~1cards~1upload~1add/post
+
+	suppliers_get_p_card_lims.py
+		Лимиты по КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Prosmotr/paths/~1content~1v1~1cards~1limits/get
+
+	suppliers_post_p_card_create.py
+		Создание КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Zagruzka/paths/~1content~1v1~1cards~1upload/post
+
+	suppliers_post_p_card_edit.py
+		Редактирование КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Zagruzka/paths/~1content~1v1~1cards~1update/post
+
+	suppliers_post_p_card_barcode_generate.py
+		Генерация баркодов
+		https://openapi.wildberries.ru/#tag/Kontent-Zagruzka/paths/~1content~1v1~1barcodes/post
+
+	suppliers_post_p_card_add_move_nm.py
+		Объединение / Разъединение НМ
+		https://openapi.wildberries.ru/#tag/Kontent-Zagruzka/paths/~1content~1v1~1cards~1moveNm/post
+
+	suppliers_post_p_card_cursor_list.py
+		Список НМ
+		https://openapi.wildberries.ru/#tag/Kontent-Prosmotr/paths/~1content~1v1~1cards~1cursor~1list/post
+
+../scripts/suppliers_scripts/content/directory
+	suppliers_get_p_card_country_orig.py
+		Страна Производства
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1directory~1countries/get
+
+	suppliers_get_p_card_charact_season.py
+		Сезон
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1directory~1seasons/get
+
+	suppliers_get_p_card_charact_brand.py
+		Бренд
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1directory~1brands/get
+
+	suppliers_get_p_card_charact_TNVED_code.py
+		ТНВЭД код
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1directory~1tnved/get
+
+	suppliers_get_p_card_charact_colors.py
+		Цвет
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1directory~1colors/get
+
+	suppliers_get_p_card_charact_gender.py
+		Страна Производства
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1directory~1countries/get
+
+../scripts/suppliers_scripts/content/analytics
+	suppliers_post_p_card_stat_period.py
+		Получение статистики КТ за выбранный период, по nmID/предметам/брендам/тегам
+		https://openapi.wildberries.ru/#tag/Kontent-Analitika/paths/~1content~1v1~1analytics~1nm-report~1detail/post
+
+	suppliers_post_p_card_stat_grouped_dwm.py
+		Получение статистики КТ по дням/неделям/месяцам за период, сгруппированный по предметам, брендам и тегам
+		https://openapi.wildberries.ru/#tag/Kontent-Analitika/paths/~1content~1v1~1analytics~1nm-report~1grouped~1history/post
+
+	suppliers_post_p_card_stat_grouped.py
+		Получение статистики КТ за период, сгруппированный по предметам, брендам и тегам
+		https://openapi.wildberries.ru/#tag/Kontent-Analitika/paths/~1content~1v1~1analytics~1nm-report~1grouped/post
+
+	suppliers_post_p_card_stat_by_nmId_dwm.py
+		Получение статистики КТ по дням/неделям/месяцам по выбранным nmID
+		https://openapi.wildberries.ru/#tag/Kontent-Analitika/paths/~1content~1v1~1analytics~1nm-report~1detail~1history/post
+
+../scripts/suppliers_scripts/content/tags
+	suppliers_patch_p_card_tag.py
+		Изменение тега
+		https://openapi.wildberries.ru/#tag/Kontent-Tegi/paths/~1content~1v1~1tag~1{id}/patch
+
+	suppliers_get_p_card_tags.py
+		Список тегов
+		https://openapi.wildberries.ru/#tag/Kontent-Tegi/paths/~1content~1v1~1tags/get
+
+	suppliers_del_p_card_tag.py
+		Удаление тега
+		https://openapi.wildberries.ru/#tag/Kontent-Tegi/paths/~1content~1v1~1tag~1{id}/delete
+
+	suppliers_post_p_card_tag_control.py
+		Управление тегами в КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Tegi/paths/~1content~1v1~1tag~1nomenclature~1link/post
+
+	suppliers_post_p_card_tag_create.py
+		Создание тега
+		https://openapi.wildberries.ru/#tag/Kontent-Tegi/paths/~1content~1v1~1tag/post
+
+../scripts/suppliers_scripts/content/files_media
+	suppliers_post_media_content_add.py
+		Изменение медиа контента КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Mediafajly/paths/~1content~1v1~1media~1save/post
+
+	suppliers_post_media_content_change.py
+		Изменение медиа контента КТ
+		https://openapi.wildberries.ru/#tag/Kontent-Mediafajly/paths/~1content~1v1~1media~1file/post
+
+../scripts/suppliers_scripts/content/object
+	suppliers_get_p_category.py
+		Категория товаров
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1object~1all/get
+
+	suppliers_get_p_card_charact_all_subcat.py
+		Характеристики для создания КТ по всем подкатегориям
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1object~1characteristics~1list~1filter/get
+
+	suppliers_get_p_parent_category.py
+		Родительские категории товаров
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1object~1parent~1all/get
+
+	suppliers_get_p_card_charact_prod_cat.py
+		Характеристики для создания КТ для категории товара
+		https://openapi.wildberries.ru/#tag/Kontent-Konfigurator/paths/~1content~1v1~1object~1characteristics~1{objectName}/get
+
+../scripts/suppliers_scripts/promocodes_discounts
+	suppliers_post_drop_discounts.py
+		Сброс скидок для номенклатур
+		https://openapi.wildberries.ru/#tag/Promokody-i-skidki/paths/~1public~1api~1v1~1revokeDiscounts/post
+
+	suppliers_post_set_discounts.py
+		Установка скидок
+		https://openapi.wildberries.ru/#tag/Promokody-i-skidki/paths/~1public~1api~1v1~1updateDiscounts/post
+
+../scripts/questions
+	questions_get_unanswered_questions.py
+		Неотвеченные вопросы
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1questions~1count-unanswered/get
+
+	questions_get_questions_quantity.py
+		Количество вопросов
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1questions~1count/get
+
+	questions_get_questions_list.py
+		Список вопросов
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1questions/get
+
+	questions_patch_work_with_questions.py
+		Работа с вопросами
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1questions/patch
+
+	questions_get_unwatched_questions.py
+		Непросмотренные отзывы и вопросы
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1new-feedbacks-questions/get
+
+	questions_get_frequently_asked_goods.py
+		Часто спрашиваемые товары
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1questions~1products~1rating/get
+
+	questions_get_question_by_id.py
+		Получить вопрос по Id
+		https://openapi.wildberries.ru/#tag/Voprosy/paths/~1api~1v1~1question/get
+
+../scripts/advert/dictionaries
+	advance_get_dict_of_subjectId.py
+		Словарь значений параметра subjectId
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Slovari/paths/~1adv~1v0~1params~1subject/get
+
+	advance_get_dict_of_setId.py
+		Словарь значений параметра menuId
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Slovari/paths/~1adv~1v0~1params~1menu/get
+
+	advance_get_dict_of_menuId.py
+		Словарь значений параметра setId
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Slovari/paths/~1adv~1v0~1params~1set/get
+
+../scripts/advert/advance_statistics
+	advance_stat_get_search_camp_by_key_phrase.py
+		Статистика поисковой кампании по ключевым фразам
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Statistika/paths/~1adv~1v1~1stat~1words/get
+
+	advance_stat_get_camp_stat_search_catalog.py
+		Статистика кампаний Поиск + Каталог
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Statistika/paths/~1adv~1v1~1seacat~1stat/get
+
+	advance_stat_get_camp_full_stat.py
+		Полная статистика кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Statistika/paths/~1adv~1v1~1fullstat/get
+
+	advance_stat_get_auto_camp_stat.py
+		Статистика автоматической кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Statistika/paths/~1adv~1v1~1auto~1stat/get
+
+../scripts/advert/finances
+	advance_fin_get_balance_refill_history.py
+		Получение истории пополнений счета
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Finansy/paths/~1adv~1v1~1upd~1intervals/get
+
+	advance_fin_get_expenses_monthly.py
+		Получение месячных интервалов для истории затрат
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Finansy/paths/~1adv~1v1~1upd~1intervals/get
+
+	advance_fin_get_budget.py
+		Бюджет кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Finansy/paths/~1adv~1v1~1budget/get
+
+	advance_fin_get_balance.py
+		Баланс
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Finansy/paths/~1adv~1v1~1balance/get
+
+	advance_fin_get_expenses_history.py
+		Получение истории затрат
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Finansy/paths/~1adv~1v1~1upd~1intervals/get
+
+	advance_fin_post_budget_refill.py
+		Пополнение бюджета кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Finansy/paths/~1adv~1v1~1budget~1deposit/post
+
+../scripts/advert/advance
+	advance_get_companies_list.py
+		Список кампаний
+		https://openapi.wildberries.ru/#tag/Prodvizhenie/paths/~1adv~1v0~1adverts/get
+
+	advance_post_create_company.py
+		Создание кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie/paths/~1adv~1v1~1save-ad/post
+
+	advance_get_obtain_companies.py
+		Получение кампаний
+		https://openapi.wildberries.ru/#tag/Prodvizhenie/paths/~1adv~1v0~1count/get
+
+	advance_get_company_info.py
+		Информация о кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie/paths/~1adv~1v0~1advert/get
+
+../scripts/advert/parameters_control
+	advance_param_post_rename_company.py
+		Переименование кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v0~1rename/post
+
+	advance_param_post_change_auto_comp_nm_list.py
+		Изменение списка номенклатур в автоматической кампании
+		Изменение списка номенклатур в автоматической кампании
+
+	advance_param_post_minus_phrase_exact_set_remove.py
+		Установка/удаление минус-фраз точного соответствия для кампании в поиске
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1search~1set-strong/post
+
+	advance_param_post_change_show_intervals.py
+		Изменение интервалов показа кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v0~1intervals/post
+
+	advance_param_get_param_auto_comp_nm_list.py
+		Список номенклатур для автоматической кампании
+		"https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1auto~1getnmtoadd/get"
+
+	advance_param_post_change_nm_activity.py
+		Изменение активности номенклатур кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v0~1nmactive/post
+
+	advance_param_post_show_zones_control.py
+		Управление зонами показов в автоматической кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1auto~1active/post
+
+	advance_param_post_minus_phrase_set_remove.py
+		Установка/удаление минус-фраз фразового соответствия для кампании в поиске
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1search~1set-phrase/post
+
+	advance_param_post_fixed_phrase_set_remove.py
+		Установка/удаление фиксированных фраз у кампании в поиске
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1search~1set-plus/post
+
+	advance_param_post_minus_phrase_searched_set_remove.py
+		Установка/удаление минус-фраз из поиска для кампании в поиске
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1search~1set-excluded/post
+
+	advance_param_get_fix_phrase_activity_ctrl.py
+		Управление активностью фиксированных фраз у кампании в поиске
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v1~1search~1set-plus/get
+
+	advance_param_get_change_activity_subj_group.py
+		Изменение активности предметной группы для кампании в поиске
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Upravlenie-parametrami-kampanii/paths/~1adv~1v0~1active/get
+
+../scripts/advert/rates
+	advance_rates_post_cpm_list_by_comp_placemet.py
+		Список ставок по типу размещения кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Stavki/paths/~1adv~1v0~1allcpm/post
+
+	advance_rates_get_cpm_list.py
+		Список ставок
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Stavki/paths/~1adv~1v0~1cpm/get
+
+	advance_rates_post_change_company_cpm.py
+		Изменение ставки у кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Stavki/paths/~1adv~1v0~1cpm/post
+
+../scripts/advert/advance_test_contour
+	advance_tst_cnt_post_create_campaign.py
+		Создание кампании, тестовый
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Testovyj-kontur/paths/~1adv~1v0~1adverts~1create/post
+
+../scripts/advert/activity
+	advance_activity_get_stop_company.py
+		Пауза кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Aktivnost-kampanii/paths/~1adv~1v0~1pause/get
+
+	advance_activity_get_start_company.py
+		Запуск кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Aktivnost-kampanii/paths/~1adv~1v0~1start/get
+
+	advance_activity_get_pause_company.py
+		Пауза кампании
+		https://openapi.wildberries.ru/#tag/Prodvizhenie-Aktivnost-kampanii/paths/~1adv~1v0~1pause/get
+
+../scripts/marketplace/supplies
+	market_get_supplies_list.py
+		Получить список поставок
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies/get
+
+	market_patch_supplies_append_order_task.py
+		Добавить к поставке сборочное задание
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1orders~1{orderId}/patch
+
+	market_post_supplies_create_new.py
+		Создать новую поставку
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies/post
+
+	market_patch_supplies_append_orders_to_box.py
+		Добавить заказы к коробу
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1trbx~1{trbxId}/patch
+
+	market_get_supplies_info_by_id.py
+		Получить информацию о поставке
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}/get
+
+	market_post_supplies_append_boxes.py
+		Добавить короба к поставке
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1trbx/post
+
+	market_get_supplies_obtain_barcode.py
+		Получить QR поставки
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1barcode/get
+
+	market_patch_supplies_transfer_to_deliver.py
+		Передать поставку в доставку
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1deliver/patch
+
+	market_delete_supplies_delete_boxes.py
+		Удалить короба из поставки
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1trbx/delete
+
+	market_delete_supplies_delete_order_from_box.py
+		Удалить заказ из короба
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1trbx~1{trbxId}~1orders~1{orderId}/delete
+
+	market_get_supplies_order_tasks_by_id.py
+		Получить сборочные задания в поставке
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1orders/get
+
+	market_delete_supplies_info_by_id.py
+		Удалить поставку
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}/delete
+
+	market_get_supplies_obtain_boxes_lst.py
+		Получить список коробов поставки
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1trbx/get
+
+	market_post_supplies_obtain_boxes_stickers.py
+		Получить стикеры коробов поставки
+		https://openapi.wildberries.ru/#tag/Marketplace-Postavki/paths/~1api~1v3~1supplies~1{supplyId}~1trbx~1stickers/post
+
+../scripts/marketplace/warehouses
+	market_get_warehouses_list.py
+		Получить список складов WB
+		https://openapi.wildberries.ru/#tag/Marketplace-Sklady/paths/~1api~1v3~1offices/get
+
+	market_put_renew_seller_warehouse.py
+		Обновить склад
+		https://openapi.wildberries.ru/#tag/Marketplace-Sklady/paths/~1api~1v3~1warehouses~1{warehouseId}/put
+
+	market_post_create_seller_warehouse.py
+		Создать склад продавца
+		https://openapi.wildberries.ru/#tag/Marketplace-Sklady/paths/~1api~1v3~1warehouses/post
+
+	market_get_seller_warehouses_list.py
+		Получить список складов продавца
+		https://openapi.wildberries.ru/#tag/Marketplace-Sklady/paths/~1api~1v3~1warehouses/get
+
+	market_delete_seller_warehouse.py
+		Удалить склад продавца
+		https://openapi.wildberries.ru/#tag/Marketplace-Sklady/paths/~1api~1v3~1warehouses~1{warehouseId}/delete
+
+../scripts/marketplace/orders_tasks
+	market_put_orders_attach_meta_UIN.py
+		Закрепить за сборочным заданием УИН (уникальный идентификационный номер)
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1meta~1uin/put
+
+	market_get_orders_metadata_obtain.py
+		Получить метаданные сборочного задания
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1meta/get
+
+	market_patch_orders_cancel_task.py
+		Отменить сборочное задание
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1cancel/patch
+
+	market_get_orders_new.py
+		Получить список новых сборочных заданий
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1new/get
+
+	market_post_orders_external_stickers.py
+		Получить список ссылок на этикетки для сборочных заданий, которые требуются при кроссбордере
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1files~1orders~1external-stickers/post
+
+	market_post_orders_status.py
+		Получить статусы сборочных заданий
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1status/post
+
+	market_post_orders_stickers.py
+		Получить этикетки для сборочных заданий
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1stickers/post
+
+	market_put_orders_attach_meta_GTIN.py
+		Закрепить за сборочным заданием GTIN
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1meta~1gtin/put
+
+	market_put_orders_attach_meta_IMEI.py
+		Закрепить за сборочным заданием IMEI
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1meta~1imei/put
+
+	market_post_attach_KiZ.py
+		Закрепить за сборочным заданием КиЗ (маркировку Честного знака)
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1meta~1sgtin/post
+
+	market_get_orders_info.py
+		Получить информацию по сборочным заданиям
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders/get
+
+	market_delete_orders_metadata_del.py
+		Удалить метаданные сборочного задания
+		https://openapi.wildberries.ru/#tag/Marketplace-Sborochnye-zadaniya/paths/~1api~1v3~1orders~1{orderId}~1meta/delete
+
+../scripts/marketplace/remains
+	market_put_renew_remains.py
+		Обновить остатки товаров
+		https://openapi.wildberries.ru/#tag/Marketplace-Ostatki/paths/~1api~1v3~1stocks~1{warehouseId}/put
+
+	market_delete_remains.py
+		Удалить остатки товаров
+		https://openapi.wildberries.ru/#tag/Marketplace-Ostatki
+
+	market_post_obtain_remains.py
+		Получить остатки товаров
+		https://openapi.wildberries.ru/#tag/Marketplace-Ostatki/paths/~1api~1v3~1stocks~1{warehouseId}/post
+
+../scripts/marketplace/passes
+	market_post_create_pass.py
+		Создать пропуск
+		https://openapi.wildberries.ru/#tag/Marketplace-Propuska/paths/~1api~1v3~1passes/post
+
+	market_delete_pass.py
+		Удалить пропуск
+		https://openapi.wildberries.ru/#tag/Marketplace-Propuska/paths/~1api~1v3~1passes~1{passId}/delete
+
+	market_get_warehouses_with_passes_list.py
+		Получить список складов, для которых требуется пропуск
+		https://openapi.wildberries.ru/#tag/Marketplace-Propuska/paths/~1api~1v3~1passes~1offices/get
+
+	market_put_renew_pass.py
+		Обновить пропуск
+		https://openapi.wildberries.ru/#tag/Marketplace-Propuska/paths/~1api~1v3~1passes~1{passId}/put
+
+	market_get_passes_list.py
+		Получить список пропусков
+		https://openapi.wildberries.ru/#tag/Marketplace-Propuska/paths/~1api~1v3~1passes/get
+
+../scripts/answers_templates
+	answers_templates_get_templates.py
+		Получить шаблоны ответов
+		https://openapi.wildberries.ru/#tag/Shablony-dlya-voprosov-i-otzyvov/paths/~1api~1v1~1templates/get
+
+	answers_templates_post_create_template.py
+		Создать шаблон
+		https://openapi.wildberries.ru/#tag/Shablony-dlya-voprosov-i-otzyvov/paths/~1api~1v1~1templates/post
+
+	answers_templates_patch_edit_template.py
+		Редактировать шаблон
+		https://openapi.wildberries.ru/#tag/Shablony-dlya-voprosov-i-otzyvov/paths/~1api~1v1~1templates/patch
+
+	answers_templates_delete_remove_template.py
+		Удалить шаблон
+		https://openapi.wildberries.ru/#tag/Shablony-dlya-voprosov-i-otzyvov/paths/~1api~1v1~1templates/delete
+
+../scripts/statistics
+	stats_get_incomes.py
+		Статистика/Методы статистики. (Лимит по запросам: один запрос одного метода в минуту.)
+		Поставки.
+		https://openapi.wildberries.ru/#tag/Statistika/paths/~1api~1v1~1supplier~1incomes/get
+
+	stats_get_sales.py
+		Статистика/Методы статистики (Лимит по запросам: один запрос одного метода в минуту.)
+		Заказы
+		https://openapi.wildberries.ru/#tag/Statistika/paths/~1api~1v1~1supplier~1orders/get
+
+	stats_get_report.py
+		Статистика/Методы статистики (Лимит по запросам: один запрос одного метода в минуту.)
+		Отчет о продажах по реализации
+		https://openapi.wildberries.ru/#tag/Statistika/paths/~1api~1v1~1supplier~1reportDetailByPeriod/get
+
+	stats_get_stocks.py
+		Статистика/Методы статистики (Лимит по запросам: один запрос одного метода в минуту.)
+		Склад
+		https://openapi.wildberries.ru/#tag/Statistika/paths/~1api~1v1~1supplier~1stocks/get
+
+	stats_get_orders.py
+		Статистика/Методы статистики (Лимит по запросам: один запрос одного метода в минуту.)
+		Заказы
+		https://openapi.wildberries.ru/#tag/Statistika/paths/~1api~1v1~1supplier~1orders/get
+
+../scripts/feed_back
+	feedback_get_max_min_rating_by_parent_ctg.py
+		Средняя оценка товаров по родительской категории
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks~1products~1rating/get
+
+	feedback_get_feedback_list.py
+		Список отзывов
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks/get
+
+	feedback_get_parent_categories_of_goods.py
+		Родительские категории товаров
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1parent-subjects/get
+
+	feedback_get_max_min_rating_by_wb_art.py
+		Средняя оценка товара по артикулу WB
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks~1products~1rating~1nmid/get
+
+	feedback_get_archive_feedback_list.py
+		Список архивных отзывов
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks~1archive/get
+
+	feedback_patch_work_with_feedback.py
+		Работа с отзывом
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks/patch
+
+	feedback_get_feedback_quantity.py
+		Количество отзывов
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks~1count/get
+
+	feedback_get_unanswered_feedback.py
+		Необработанные отзывы
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks~1count-unanswered/get
+
+	feedback_get_median_products_rating_by_parent_ctg.py
+		Средняя оценка товаров по родительской категории
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedbacks~1products~1rating/get
+
+	feedback_get_feedback_by_id.py
+		Получить отзыв по Id
+		https://openapi.wildberries.ru/#tag/Otzyvy/paths/~1api~1v1~1feedback/get
+
+files: 136
